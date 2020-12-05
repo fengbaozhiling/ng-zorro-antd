@@ -1,18 +1,26 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+__ngcc_entry_points__.json
+
 # compiled output
 dist/
-doc/
+/site/
 tmp/
+junit/
 out-tsc/
-publish/
+/publish/
+/lib/
 integration/**/lib/
 integration/**/*.ngfactory.ts
 integration/**/*.ngsummary.json
-
+schematics/demo
+schematics/utils/create-custom-theme.ts
+schematics/utils/version-names.ts
+ng-zorro.github.io/
 
 # dependencies
-node_modules/
+node_modules
+node_modules.*/
 package-lock.json
 integration/**/package-lock.json
 yarn.lock
@@ -28,15 +36,12 @@ yarn.lock
 
 # IDE - VSCode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # misc
 /.sass-cache
 /connect.lock
 /coverage
+/coverage-report
 /libpeerconnection.log
 npm-debug.log
 testem.log

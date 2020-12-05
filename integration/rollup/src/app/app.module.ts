@@ -1,18 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { BrowserModule } from '@angular/platform-browser';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgZorroAntdModule.forRoot(),
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, NzButtonModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
